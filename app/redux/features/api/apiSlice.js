@@ -14,7 +14,7 @@ export const apiSlice = createApi({
       query: () => ({
         url: "me",
         method: "GET",
-        credentials: "include", //this sent cookies to backend back
+        // credentials: "include", //this sent cookies to backend back
       }),
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {

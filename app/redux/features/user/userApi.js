@@ -7,7 +7,7 @@ export const userApi = apiSlice.injectEndpoints({
         url: "add-admin",
         method: "PUT",
         body: data,
-        credentials: "include",
+        // credentials: "include",
       }),
     }),
     removeAdmin: builder.mutation({
@@ -15,28 +15,28 @@ export const userApi = apiSlice.injectEndpoints({
         url: "remove-admin",
         method: "PUT",
         body: data,
-        credentials: "include",
+        // credentials: "include",
       }),
     }),
     getAllUsers: builder.query({
       query: () => ({
         url: "get-users",
         method: "GET",
-        credentials: "include",
+        // credentials: "include",
       }),
     }),
     getAllAdmins: builder.query({
       query: () => ({
         url: "get-admins",
         method: "GET",
-        credentials: "include",
+        // credentials: "include",
       }),
     }),
     deleteUser: builder.mutation({
       query: (id) => ({
         url: `delete-user/${id}`,
         method: "DELETE",
-        credentials: "include",
+        // credentials: "include",
       }),
     }),
   }),

@@ -7,21 +7,21 @@ export const orderApi = apiSlice.injectEndpoints({
         url: "create-order",
         method: "POST",
         body: data,
-        credentials: "include",
+        // credentials: "include",
       }),
     }),
     getAdminOrders: builder.query({
       query: () => ({
         url: "get-admin-orders",
         method: "GET",
-        credentials: "include",
+        // credentials: "include",
       }),
     }),
     getSingleOrder: builder.query({
       query: (id) => ({
         url: `get-admin-order/${id}`,
         method: "GET",
-        credentials: "include",
+        // credentials: "include",
       }),
     }),
     updateOrderStatus: builder.mutation({
@@ -29,7 +29,7 @@ export const orderApi = apiSlice.injectEndpoints({
         url: `update-order-status`,
         method: "PUT",
         body: { id, status },
-        credentials: "include",
+        // credentials: "include",
       }),
     }),
   }),

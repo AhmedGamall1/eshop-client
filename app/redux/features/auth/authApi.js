@@ -9,7 +9,7 @@ export const authApi = apiSlice.injectEndpoints({
         url: "registration",
         method: "POST",
         body: data,
-        credentials: "include",
+        // credentials: "include",
       }),
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
@@ -30,7 +30,7 @@ export const authApi = apiSlice.injectEndpoints({
         url: "login",
         method: "POST",
         body: data,
-        credentials: "include",
+        // credentials: "include",
       }),
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
@@ -49,7 +49,7 @@ export const authApi = apiSlice.injectEndpoints({
         url: "socialAuth",
         method: "POST",
         body: { name, email },
-        credentials: "include",
+        // credentials: "include",
       }),
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
@@ -68,7 +68,7 @@ export const authApi = apiSlice.injectEndpoints({
       query: () => ({
         url: "logout",
         method: "POST",
-        credentials: "include",
+        // credentials: "include",
       }),
       async onQueryStarted(arg, { dispatch }) {
         try {
