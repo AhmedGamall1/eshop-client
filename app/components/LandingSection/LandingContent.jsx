@@ -35,7 +35,7 @@ const LandingContent = () => {
         </button>
       </div>
       <div
-        className="md:hidden flex lg:items-start lg:p-0 p-4 lg:w-[80%]   flex-col h-[70%]"
+        className="md:hidden flex lg:items-start lg:p-0 p-4 lg:w-[80%] mt-8  flex-col h-[70%]"
         data-aos="fade-up"
         data-aos-duration="1600"
       >
