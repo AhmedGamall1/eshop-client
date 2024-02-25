@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const Banner1 = () => {
+  // klfd
   return (
     <div className="bg-primaryBlack py-12 px-6 w-full flex items-center">
       <div className="basis-[55%] h-[250px] hidden sm:flex items-center justify-center">
