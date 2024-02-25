@@ -9,7 +9,6 @@ export const orderApi = apiSlice.injectEndpoints({
         body: data,
 
         // credentials: "include",
-        mode: "no-cors",
       }),
     }),
     getAdminOrders: builder.query({
@@ -18,7 +17,6 @@ export const orderApi = apiSlice.injectEndpoints({
         method: "GET",
 
         // credentials: "include",
-        mode: "no-cors",
       }),
     }),
     getSingleOrder: builder.query({
@@ -27,7 +25,6 @@ export const orderApi = apiSlice.injectEndpoints({
         method: "GET",
 
         // credentials: "include",
-        mode: "no-cors",
       }),
     }),
     updateOrderStatus: builder.mutation({
@@ -37,7 +34,6 @@ export const orderApi = apiSlice.injectEndpoints({
         body: { id, status },
 
         // credentials: "include",
-        mode: "no-cors",
       }),
     }),
   }),

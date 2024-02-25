@@ -8,7 +8,6 @@ export const productApi = apiSlice.injectEndpoints({
         method: "POST",
         body: data,
         // credentials: "include",
-        mode: "no-cors",
       }),
     }),
     getProducts: builder.query({
@@ -18,7 +17,6 @@ export const productApi = apiSlice.injectEndpoints({
         }${category !== null ? `&category=${category}` : ""}`,
         method: "GET",
         // credentials: "include",
-        mode: "no-cors",
       }),
     }),
     getAdminProducts: builder.query({
@@ -26,7 +24,6 @@ export const productApi = apiSlice.injectEndpoints({
         url: `getAdminProducts`,
         method: "GET",
         // credentials: "include",
-        mode: "no-cors",
       }),
     }),
     getSingleProduct: builder.query({
@@ -34,7 +31,6 @@ export const productApi = apiSlice.injectEndpoints({
         url: `get-single-product/${id}`,
         method: "GET",
         // credentials: "include",
-        mode: "no-cors",
       }),
     }),
     editProduct: builder.mutation({
@@ -43,7 +39,6 @@ export const productApi = apiSlice.injectEndpoints({
         method: "PUT",
         body: data,
         // credentials: "include",
-        mode: "no-cors",
       }),
     }),
     addCategories: builder.mutation({
@@ -52,7 +47,6 @@ export const productApi = apiSlice.injectEndpoints({
         method: "POST",
         body: data,
         // credentials: "include",
-        mode: "no-cors",
       }),
     }),
     getCategories: builder.query({
@@ -60,7 +54,6 @@ export const productApi = apiSlice.injectEndpoints({
         url: "get-categories",
         method: "GET",
         // credentials: "include",
-        mode: "no-cors",
       }),
     }),
   }),
