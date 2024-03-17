@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import shoesPng from "../../../public/white-shoes.png";
+import Link from "next/link";
 const LandingContent = () => {
   return (
     <div className="lg:flex lg:justify-between justify-center items-center w-[75%] m-auto text-white lg:mt-5 mt-[70px]">
@@ -30,9 +31,12 @@ const LandingContent = () => {
             <span className="text-[18px] mt-1 text-secondary">99</span>
           </span>
         </div>
-        <button className="text-[20px] mt-2 bg-white text-black flex-center py-4    px-[70px] font-bold">
-          Shop Now
-        </button>
+        <Link
+          href={"/admin"}
+          className="text-[20px] mt-2 bg-white text-black flex-center py-4    px-[70px] font-bold"
+        >
+          View Dashboard
+        </Link>
       </div>
       <div
         className="md:hidden flex lg:items-start lg:p-0 p-4 lg:w-[80%] mt-8  flex-col h-[70%]"
@@ -60,9 +64,12 @@ const LandingContent = () => {
             <span className="text-[18px] mt-1 text-secondary">99</span>
           </span>
         </div>
-        <button className="text-[20px] mt-2 bg-white text-black flex-center py-4    px-[70px] font-bold">
-          Shop Now
-        </button>
+        <Link
+          href={"/admin"}
+          className="text-[20px] mt-2 bg-white text-black flex-center py-4    px-[70px] font-bold"
+        >
+          View Dashboard
+        </Link>
       </div>
       <div
         className="lg:flex items-center justify-between hidden"
