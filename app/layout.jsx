@@ -23,7 +23,9 @@ export default function RootLayout({ children }) {
               },
             }}
           />
-          <LoadUsers>{children}</LoadUsers>
+          {/* <LoadUsers> */}
+          {children}
+          {/* </LoadUsers> */}
         </Providers>
       </body>
     </html>
