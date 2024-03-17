@@ -12,7 +12,7 @@ const CartHeader = () => {
   }, [cartItems, dispatch]);
   return (
     <Link href={"/cart"} className="relative cursor-pointer">
-      <Image src={"/cart.svg"} width={30} height={30} />
+      <Image src={"/cart.svg"} width={30} height={30} alt="Cart png" />
       <div className="absolute -top-1 -right-1 w-[6px] h-[6px] rounded-full bg-heart p-[9px] text-[11px] font-bold text-white flex-center">
         {cartTotalQty}
       </div>

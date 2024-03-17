@@ -32,18 +32,22 @@ body {
 .background {
   background-image: url("/01n.jpg");
   background-size: cover;
+  background-position: center;
 }
 .backgroundSecondary {
   background-image: url("/imagesBanner2.jpeg");
   background-size: cover;
+  background-position: center;
 }
 .backgroundBanner {
   background-image: url("/imageBanner1.jpeg");
   background-size: cover;
+  background-position: center;
 }
 .backgroundBanner2 {
   background-image: url("/shop18_home_banner3.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .container {

@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 
 const WishlistHeader = () => {
   const { wishlistItems } = useSelector((state) => state.wishlist);
-  console.log(wishlistItems);
   return (
     <Link className="relative cursor-pointer" href={"/wishlist"}>
       <FaRegHeart size={28} className="" />

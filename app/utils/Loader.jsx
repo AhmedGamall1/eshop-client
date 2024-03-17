@@ -1,7 +1,7 @@
 const LoaderAnimation = () => {
   return (
-    <div className="w-full h-[100vh] flex-center text-black bg-[#F8FAFC]">
-      {/* <div className="preloader">
+    <div className="w-full h-screen flex-center text-black bg-[#F8FAFC]">
+      <div className="preloader">
         <svg
           className="cart"
           role="img"
@@ -13,11 +13,11 @@ const LoaderAnimation = () => {
         >
           <g
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="8"
           >
-            <g className="cart__track" stroke="hsla(0,10%,10%,0.1)">
+            <g className="cart__track" stroke="hsla(0, 10%, 10%, 0.1)">
               <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
               <circle cx="43" cy="111" r="13" />
               <circle cx="102" cy="111" r="13" />
@@ -26,8 +26,8 @@ const LoaderAnimation = () => {
               <polyline
                 className="cart__top"
                 points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80"
-                stroke-dasharray="338 338"
-                stroke-dashoffset="-338"
+                strokeDasharray="338 338"
+                strokeDashoffset="-338"
               />
               <g className="cart__wheel1" transform="rotate(-90,43,111)">
                 <circle
@@ -35,8 +35,8 @@ const LoaderAnimation = () => {
                   cx="43"
                   cy="111"
                   r="13"
-                  stroke-dasharray="81.68 81.68"
-                  stroke-dashoffset="81.68"
+                  strokeDasharray="81.68 81.68"
+                  strokeDashoffset="81.68"
                 />
               </g>
               <g className="cart__wheel2" transform="rotate(90,102,111)">
@@ -45,14 +45,14 @@ const LoaderAnimation = () => {
                   cx="102"
                   cy="111"
                   r="13"
-                  stroke-dasharray="81.68 81.68"
-                  stroke-dashoffset="81.68"
+                  strokeDasharray="81.68 81.68"
+                  strokeDashoffset="81.68"
                 />
               </g>
             </g>
           </g>
         </svg>
-      </div> */}
+      </div>
     </div>
   );
 };

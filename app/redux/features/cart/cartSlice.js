@@ -82,10 +82,13 @@ const cartSlice = createSlice({
     getTotals: (state, action) => {
       let total = 0;
       let quantity = 0;
-      state.cartItems.map((cartItem) => {
-        total += cartItem.price * cartItem.productQty;
-        quantity += cartItem.productQty;
-      });
+      if (state.cartItems !== null) {
+        state.cartItems.map((cartItem) => {
+          total += cartItem.price * cartItem.productQty;
+          quantity += cartItem.productQty;
+        });
+      }
+
       const cartTotal = parseFloat(total.toFixed(2));
       state.cartTotalPrice = cartTotal;
       state.cartTotalQty = quantity;
