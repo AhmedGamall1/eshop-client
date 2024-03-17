@@ -66,7 +66,7 @@ const LandingContent = () => {
         </div>
         <Link
           href={"/admin"}
-          className="text-[20px] mt-2 bg-white text-black flex-center py-4    px-[70px] font-bold"
+          className="text-[20px] whitespace-nowrap mt-2 bg-white text-black flex-center py-4    px-[70px] font-bold"
         >
           View Dashboard
         </Link>
