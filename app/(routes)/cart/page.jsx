@@ -7,7 +7,12 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <Heading title={"Cart - Eshop"} keyword={"hcartt umii onceshop"} />
+      <Heading
+        title={"Cart - Eshop"}
+        keyword={
+          "a beautiful great nextjs14 eshop website to buy clothes shorts and unique sports eshop clothes"
+        }
+      />
       <Header isLanding={false} />
       <Cart />
       <Footer />
