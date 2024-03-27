@@ -6,7 +6,6 @@ const Heading = ({ title, keywords, description }) => {
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="keywords" content={keywords} />
       <meta name="description" content={description} />
-      <meta name="description" content={description} />
     </>
   );
 };

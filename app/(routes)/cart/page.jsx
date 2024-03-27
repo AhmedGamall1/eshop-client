@@ -7,7 +7,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <Heading title={"Cart - Eshop"} />
+      <Heading title={"Cart - Eshop"} keyword={"hcartt umii onceshop"} />
       <Header isLanding={false} />
       <Cart />
       <Footer />
